@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Interaction",
+	"category" : "CuOOra-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"question"
+	],
+	"name" : "Answer",
+	"type" : "normal"
+}

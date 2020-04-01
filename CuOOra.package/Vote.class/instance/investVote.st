@@ -1,0 +1,3 @@
+public
+investVote
+^ self subclassResponsibility 

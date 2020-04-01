@@ -1,0 +1,3 @@
+public
+deleteMySelf
+^ self subclassResponsibility.

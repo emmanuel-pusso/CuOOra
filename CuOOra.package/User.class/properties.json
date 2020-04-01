@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "CuOOra-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"username",
+		"password",
+		"creationDateTime",
+		"followers",
+		"follows",
+		"topics",
+		"answers",
+		"questions"
+	],
+	"name" : "User",
+	"type" : "normal"
+}

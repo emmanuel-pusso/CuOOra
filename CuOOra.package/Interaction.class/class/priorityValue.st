@@ -1,0 +1,3 @@
+accessing
+priorityValue
+^ self subclassResponsibility.

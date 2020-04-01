@@ -1,0 +1,3 @@
+public
+getValue
+^ value.

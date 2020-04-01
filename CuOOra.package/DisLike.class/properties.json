@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Vote",
+	"category" : "CuOOra-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DisLike",
+	"type" : "normal"
+}

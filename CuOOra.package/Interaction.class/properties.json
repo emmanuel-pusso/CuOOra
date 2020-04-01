@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "CuOOra-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"priorityValue"
+	],
+	"instvars" : [
+		"text",
+		"creationDateTime",
+		"user",
+		"votes"
+	],
+	"name" : "Interaction",
+	"type" : "normal"
+}
