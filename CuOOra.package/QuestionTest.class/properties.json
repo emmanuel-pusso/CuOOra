@@ -12,7 +12,12 @@
 		"topic2",
 		"positiveVote",
 		"negativeVote",
-		"user2"
+		"user2",
+		"user3",
+		"positiveVoteUser2",
+		"positiveVoteUser3",
+		"negativeVoteUser2",
+		"negativeVoteUser3"
 	],
 	"name" : "QuestionTest",
 	"type" : "normal"
