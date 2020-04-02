@@ -10,3 +10,16 @@ user3:= User username: 'emma.pusso' password: '1qaz2wsx'.
 user4:= User username: 'agus.diaz' password: '1qaz2wsx'.
 "user 5 is empty"
 user5:= User username: '' password: ''.
+
+"user 6 "
+user5:= User username: 'someBody' password: '1234'.
+
+
+"Adding topics of interest to users"
+sportTopic := Topic name: 'Deporte' description:'algo relacionado al deporte' .
+developmentTopic:= Topic name: 'Programacion' description:'smalltalk practicas' .
+
+"Creating Questions"
+testQuestion:= Question title: 'Como hacer los test?' creator: user1  text: 'alguien me explica como se hacen' topic: developmentTopic. 
+testQuestion2 := Question title: 'Como remaar?' creator: user4  text: 'probando nuevos preguntas' topic:sportTopic. 
+user1 addTopicOfInterest: sportTopic 

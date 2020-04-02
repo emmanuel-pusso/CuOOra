@@ -10,7 +10,11 @@
 		"user2",
 		"user3",
 		"user4",
-		"user5"
+		"user5",
+		"sportTopic",
+		"developmentTopic",
+		"testQuestion",
+		"testQuestion2"
 	],
 	"name" : "UserTest",
 	"type" : "normal"

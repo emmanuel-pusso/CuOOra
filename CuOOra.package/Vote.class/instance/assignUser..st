@@ -1,3 +1,3 @@
 accessing
 assignUser: anUser
-user:=User.
+user:=anUser.

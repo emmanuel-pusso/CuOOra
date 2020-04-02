@@ -1,8 +1,8 @@
 instance creation
 title: aTitle creator: anUser text: aText topic: aTopic
 	^ self new
-		title: aTitle
-			creator: anUser
+		initializeWithCreator: anUser
+			tilte: aTitle
 			text: aText
 			topic: aTopic;
 		yourself

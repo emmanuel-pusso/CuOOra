@@ -9,7 +9,6 @@
 		"username",
 		"password",
 		"creationDateTime",
-		"followers",
 		"follows",
 		"topics",
 		"answers",

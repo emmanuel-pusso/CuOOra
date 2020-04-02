@@ -8,8 +8,9 @@ voteAlreadyExist:=self getExistentVoteForSameUser: aVote.
 
 (voteAlreadyExist)
 	ifNil: [votes add: aVote] 
-	ifNotNil: [ (aVote getValue = voteAlreadyExist getValue)
-					ifFalse: [self changeVote: voteAlreadyExist]
+	ifNotNil: [ (aVote = voteAlreadyExist)
+					ifFalse: [votes remove: voteAlreadyExist.
+								votes add: aVote ]
 				]
 
 
