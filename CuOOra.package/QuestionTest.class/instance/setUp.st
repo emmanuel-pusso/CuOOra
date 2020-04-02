@@ -13,3 +13,5 @@ negativeVoteUser2:=DisLike registerVotetoAnUser: user2.
 negativeVoteUser3:=DisLike registerVotetoAnUser: user3.
 
 question:= Question title: 'question uno' creator: user1 text: 'question uno' topic: topic1. 
+question2:= Question title: 'question dos' creator: user2 text: 'question 2' topic: topic1.
+answer3:= Answer creator: user1  text: 'question 3' forQuestion: question2.

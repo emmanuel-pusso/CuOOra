@@ -1,4 +1,4 @@
 public
-addAQuestion: aQuestion
+addQuestion: aQuestion
 
 questions add: aQuestion 

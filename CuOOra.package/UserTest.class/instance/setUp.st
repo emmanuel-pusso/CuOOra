@@ -22,4 +22,7 @@ developmentTopic:= Topic name: 'Programacion' description:'smalltalk practicas' 
 "Creating Questions"
 testQuestion:= Question title: 'Como hacer los test?' creator: user1  text: 'alguien me explica como se hacen' topic: developmentTopic. 
 testQuestion2 := Question title: 'Como remaar?' creator: user4  text: 'probando nuevos preguntas' topic:sportTopic. 
-user1 addTopicOfInterest: sportTopic 
+user1 addTopicOfInterest: sportTopic.
+
+answer1:= Answer creator: user1  text: 'answer1' forQuestion: testQuestion .
+answer2:= Answer creator: user1  text: 'answer2' forQuestion: testQuestion.
