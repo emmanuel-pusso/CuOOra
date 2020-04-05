@@ -1,0 +1,3 @@
+public
+amountDisLikes
+	^ dislikes size
