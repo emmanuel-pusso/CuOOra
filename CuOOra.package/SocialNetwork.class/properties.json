@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "CuOOra-Model",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"singleton"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

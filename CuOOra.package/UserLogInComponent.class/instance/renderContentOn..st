@@ -11,7 +11,9 @@ renderContentOn: aCanvas
 			aCanvas paragraph
 				with: [ aCanvas strong with: 'Contraseña:'.
 					aCanvas space.
-					aCanvas textInput on: #contraseña of: self; type: 'password' ] ].
-	aCanvas anchor
-		callback: [ self iniciarSesion ];
-		with: [ aCanvas submitButton: 'Iniciar Sesion' ]
+					aCanvas textInput
+						on: #contraseña of: self;
+						type: 'password' ].
+			aCanvas button
+				callback: [ self iniciarSesion ];
+				with: 'Iniciar Sesion' ]

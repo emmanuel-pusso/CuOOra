@@ -1,4 +1,4 @@
 initialize
 initialize 
 
-WAAdmin register:  self asApplicationAt: 'Cuoora'
+WAAdmin register:  self asApplicationAt: 'Cuoora'.

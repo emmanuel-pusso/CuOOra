@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"usuario",
-		"contraseña"
+		"contraseña",
+		"socialNetwork"
 	],
 	"name" : "UserLogInComponent",
 	"type" : "normal"

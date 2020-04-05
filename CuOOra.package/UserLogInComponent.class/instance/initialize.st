@@ -1,3 +1,4 @@
 initialize
 initialize 
-super initialize
+super initialize.
+socialNetwork := SocialNetwork example.

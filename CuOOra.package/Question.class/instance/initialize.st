@@ -1,6 +1,5 @@
 initialize
-initialize 
-super initialize.
-answers:= OrderedCollection new.
-topics:= Set new.
-
+initialize
+	super initialize.
+	topics := Set new.
+	answers := OrderedCollection new
