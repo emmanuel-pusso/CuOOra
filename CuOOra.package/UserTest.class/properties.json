@@ -16,7 +16,8 @@
 		"testQuestion",
 		"testQuestion2",
 		"answer1",
-		"answer2"
+		"answer2",
+		"user6"
 	],
 	"name" : "UserTest",
 	"type" : "normal"
