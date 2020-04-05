@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "CuOOra-Model",
+	"super" : "WAComponent",
+	"category" : "CuOOra-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"users",
-		"topics",
-		"name"
+		"usuario",
+		"contraseña"
 	],
-	"name" : "SocialNetwork",
+	"name" : "UserLogInComponent",
 	"type" : "normal"
 }
