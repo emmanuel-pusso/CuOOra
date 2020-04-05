@@ -1,5 +1,6 @@
 testing
 testQuestionAddOneLikeAndOneDislike
-	question addVote: positiveVoteUser2.
-	question addVote: negativeVote.
+	question
+		addLike: positiveVoteUser2;
+		addDisLike: negativeVote.
 	self assert: question getScore equals: 0

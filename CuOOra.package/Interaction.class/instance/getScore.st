@@ -1,4 +1,5 @@
 public
 getScore
-"suma todos los values de cada vote"
-^ votes inject:0 into: [ :total :each | total + each getValue ]
+"suma de cantidad de likes y dislikes"
+^ self amountLikes - self amountDisLikes.
+

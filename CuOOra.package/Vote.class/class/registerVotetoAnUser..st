@@ -1,3 +1,5 @@
 creation
 registerVotetoAnUser: anUser
-^ self subclassResponsibility.
+	^ self new
+		assignUser: anUser;
+		yourself

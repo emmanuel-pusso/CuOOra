@@ -1,5 +1,5 @@
 testing
 testQuestionWithoutVoteAddDisLike
 self assert: question getScore equals: 0.
-question addVote: negativeVote.
+question addDisLike: negativeVote.
 self assert: question getScore equals: -1.

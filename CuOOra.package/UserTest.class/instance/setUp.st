@@ -1,6 +1,11 @@
 running
 setUp
+|colTopics colTopics2|
 super setUp.
+
+colTopics:=Set new.
+colTopics2:=Set new.
+
 user1:= User username: 'emma.pusso' password: '1qaz2wsx'.
 "user2 reference same Object than user1"
 user2:= user1.
@@ -12,16 +17,19 @@ user4:= User username: 'agus.diaz' password: '1qaz2wsx'.
 user5:= User username: '' password: ''.
 
 "user 6 "
-user5:= User username: 'someBody' password: '1234'.
+user6:= User username: 'someBody' password: '1234'.
 
 
 "Adding topics of interest to users"
 sportTopic := Topic name: 'Deporte' description:'algo relacionado al deporte' .
 developmentTopic:= Topic name: 'Programacion' description:'smalltalk practicas' .
 
+colTopics add: developmentTopic.
+colTopics2 add: sportTopic.
+
 "Creating Questions"
-testQuestion:= Question title: 'Como hacer los test?' creator: user1  text: 'alguien me explica como se hacen' topic: developmentTopic. 
-testQuestion2 := Question title: 'Como remaar?' creator: user4  text: 'probando nuevos preguntas' topic:sportTopic. 
+testQuestion:= Question title: 'Como hacer los test?' creator: user1  text: 'alguien me explica como se hacen' topics: colTopics . 
+testQuestion2 := Question title: 'Como remaar?' creator: user4  text: 'probando nuevos preguntas' topics: colTopics2. 
 user1 addTopicOfInterest: sportTopic.
 
 answer1:= Answer creator: user1  text: 'answer1' forQuestion: testQuestion .

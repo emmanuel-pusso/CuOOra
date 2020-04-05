@@ -11,4 +11,4 @@ testFollow
 
 	"un usuario se sigue a si mismo"
 	user4 follow: user4.
-	self deny: (user4 follows includes: user4)
+	self assert: (user4 follows includes: user4)

@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"value",
 		"creationDateTime",
 		"user"
 	],

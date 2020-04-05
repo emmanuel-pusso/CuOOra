@@ -11,7 +11,8 @@
 		"text",
 		"creationDateTime",
 		"user",
-		"votes"
+		"likes",
+		"dislikes"
 	],
 	"name" : "Interaction",
 	"type" : "normal"
