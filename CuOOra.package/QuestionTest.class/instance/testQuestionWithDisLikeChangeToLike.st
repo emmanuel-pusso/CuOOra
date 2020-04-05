@@ -1,7 +1,7 @@
 testing
 testQuestionWithDisLikeChangeToLike
-	question addVote: negativeVote.
+	question addDisLike: negativeVote.
 	self assert: question getScore equals: -1.
-	question addVote: positiveVote.
+	question addLike: positiveVote.
 	self assert: question getScore equals: 1.
 	

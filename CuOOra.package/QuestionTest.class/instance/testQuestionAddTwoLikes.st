@@ -1,6 +1,6 @@
 testing
 testQuestionAddTwoLikes
 	question
-		addVote: positiveVoteUser2;
-		addVote: positiveVoteUser3.
+		addLike: positiveVoteUser2;
+		addLike: positiveVoteUser3.
 	self assert: question getScore equals: 2

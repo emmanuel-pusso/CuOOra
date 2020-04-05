@@ -1,3 +1,3 @@
 initialization
 initialize
-^ self subclassResponsibility 
+creationDateTime:=DateAndTime now. 

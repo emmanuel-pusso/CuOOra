@@ -1,4 +1,5 @@
 initialize
 initialize
 creationDateTime:= DateAndTime now.
-votes:= Set new.
+likes:= Set new.
+dislikes:= Set new.
