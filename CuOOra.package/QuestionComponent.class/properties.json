@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "InteractionComponent",
+	"category" : "CuOOra-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"question"
+	],
+	"name" : "QuestionComponent",
+	"type" : "normal"
+}

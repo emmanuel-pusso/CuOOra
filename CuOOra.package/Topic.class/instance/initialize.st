@@ -1,4 +1,4 @@
 initialize
 initialize
 super initialize.
-questions:= OrderedCollection new.
+questions:= Set new.

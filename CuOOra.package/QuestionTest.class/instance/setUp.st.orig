@@ -19,5 +19,9 @@ negativeVoteUser3:=Vote registerVotetoAnUser: user3.
 
 question:= Question title: 'question uno' creator: user1 text: 'question uno' topics: colTopics. 
 colTopics add: topic2.
+<<<<<<< HEAD
+question2:= Question title: 'question dos' creator: user2 text: 'question 2' topics: colTopics.
+=======
 question2:= Question title: 'question dos' creator: user2 text: 'question 2' topics: colTopics .
+>>>>>>> origin/2929-INVALID-ISSUE
 answer3:= Answer creator: user1  text: 'question 3' forQuestion: question2.

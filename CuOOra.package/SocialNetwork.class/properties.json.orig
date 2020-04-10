@@ -3,7 +3,11 @@
 	"super" : "Object",
 	"category" : "CuOOra-Model",
 	"classinstvars" : [
+<<<<<<< HEAD
+		"singleton"
+=======
 		"soleInstance"
+>>>>>>> origin/2929-INVALID-ISSUE
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
