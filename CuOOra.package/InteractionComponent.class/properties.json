@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"usuario",
-		"contraseña"
-	],
-	"name" : "UserLogInComponent",
+	"instvars" : [ ],
+	"name" : "InteractionComponent",
 	"type" : "normal"
 }

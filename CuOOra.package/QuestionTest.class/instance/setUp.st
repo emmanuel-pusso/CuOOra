@@ -18,5 +18,6 @@ negativeVoteUser2:=Vote registerVotetoAnUser: user2.
 negativeVoteUser3:=Vote registerVotetoAnUser: user3.
 
 question:= Question title: 'question uno' creator: user1 text: 'question uno' topics: colTopics. 
-question2:= Question title: 'question dos' creator: user2 text: 'question 2' topics: colTopics.
+colTopics add: topic2.
+question2:= Question title: 'question dos' creator: user2 text: 'question 2' topics: colTopics .
 answer3:= Answer creator: user1  text: 'question 3' forQuestion: question2.
