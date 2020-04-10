@@ -9,7 +9,8 @@
 		"header",
 		"description",
 		"user",
-		"questions"
+		"questions",
+		"myComponent"
 	],
 	"name" : "HomeComponent",
 	"type" : "normal"

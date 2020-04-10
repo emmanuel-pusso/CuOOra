@@ -1,5 +1,6 @@
 callbacks
 proceedWith: anUser 
-
+|componente|
 self session user: anUser. 
-self call: HomeComponent new
+componente:= QuestionRelevantComponent new. 
+self call: (HomeComponent newComponent: componente  withUser: anUser)
