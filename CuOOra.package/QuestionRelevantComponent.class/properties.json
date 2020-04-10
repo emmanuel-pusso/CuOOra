@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "QuestionListComponent",
+	"name" : "QuestionRelevantComponent",
 	"type" : "normal"
 }

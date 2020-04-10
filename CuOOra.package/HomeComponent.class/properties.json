@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"header"
+		"header",
+		"description",
+		"user",
+		"questions"
 	],
 	"name" : "HomeComponent",
 	"type" : "normal"

@@ -12,7 +12,7 @@ renderQuestions: aQuestion on: aCanvas
 	aCanvas break.
 	aCanvas text: 'Realizada por: '.
 	aCanvas anchor
-		callback: [ self haceAlgo: aQuestion user ];
+		callback: [ self proceedWith: aQuestion getUser ];
 		with: aQuestion user username.
 	aCanvas horizontalRule.
 	aCanvas break
