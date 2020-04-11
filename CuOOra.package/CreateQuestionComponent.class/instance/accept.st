@@ -8,4 +8,5 @@ accept
 	(newTopics substrings: ', ') do: [ :each | colTopics add: each ].
 	self newTopics: colTopics.
 	question:= Question title: newTitle  creator: self session user text:newText   topics: newTopics  .
-	self answer
+	"self answer"
+	self session presenter call: (HomeComponent newComponent: (RelevantQuestionComponent new )).
