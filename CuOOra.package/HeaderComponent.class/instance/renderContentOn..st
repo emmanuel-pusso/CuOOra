@@ -6,6 +6,6 @@ renderContentOn: aCanvas
 	aCanvas strong with: 'Usuario'.
 	aCanvas space.
 	aCanvas anchor
-		callback: [ self answer ];
+		callback: [ self  logOut  ];
 		with: 'Log Out'.
 	aCanvas horizontalRule.

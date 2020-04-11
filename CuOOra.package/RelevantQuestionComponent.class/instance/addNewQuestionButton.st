@@ -1,6 +1,6 @@
 adding
 addNewQuestionButton
-	| editor |
+	"| editor |
 	editor := CreateQuestionComponent
 		question:
 			(Question
@@ -10,4 +10,6 @@ addNewQuestionButton
 				topics: nil).
 	self call: editor.
 	editor question
-		ifNotNil: [ self session user addQuestion: editor question ]
+		ifNotNil: [ self session user addQuestion: editor question ]"
+
+		self session presenter call: (HomeComponent newComponent: (CreateQuestionComponent new)).

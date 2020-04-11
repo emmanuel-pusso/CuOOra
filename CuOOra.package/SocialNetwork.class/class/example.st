@@ -18,9 +18,10 @@ example
 	juan:=  (User username: 'juan@cuoora.com'password: 'juan@cuoora.com').
 	
 	example addUser: pedro; addUser: diego; addUser: juan.
-	
-	"esto esta agregado para probar"
 	pedro addTopicOfInterest: topic1.
+		
+	"esto esta agregado para probar"
+	diego addTopicOfInterest: topic2.
 	
 	"aca termina"
 	pedro follow: juan.

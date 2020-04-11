@@ -1,4 +1,4 @@
 callbacks
 cancel
-	question := nil.
-	self answer
+	"question := nil."
+	self session presenter call: (HomeComponent newComponent: (RelevantQuestionComponent new ))

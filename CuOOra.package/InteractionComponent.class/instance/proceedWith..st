@@ -1,3 +1,6 @@
 callbakcs
 proceedWith: anUser
-	self call: (HomeComponent  newWithUser: anUser).
+	self session presenter
+		call:
+			(HomeComponent
+				newComponent: (UserQuestionComponent newWithUser: anUser))
