@@ -1,0 +1,8 @@
+callbacks
+cancel
+	"question := nil."
+<<<<<<< HEAD
+	self answer
+=======
+	self session presenter call: (HomeComponent newComponent: (RelevantQuestionComponent new ))
+>>>>>>> origin/2-INVALID-ISSUE
