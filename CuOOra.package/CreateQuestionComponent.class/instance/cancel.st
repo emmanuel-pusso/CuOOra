@@ -1,4 +1,4 @@
 callbacks
 cancel
-	question := nil.
+	"question := nil."
 	self answer

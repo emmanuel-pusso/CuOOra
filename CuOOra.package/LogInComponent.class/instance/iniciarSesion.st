@@ -6,4 +6,3 @@ iniciarSesion
 		authentificationForUser: usuario
 		withPassword: contraseña)	
 		ifNotNil: [ :it |  self proceedWith: it].
-		"ifNil: [ self error: 'Usuario Invalido' ]"

@@ -1,5 +1,6 @@
 rendering
 renderContentOn: aCanvas
+
 	aCanvas
 		form: [ aCanvas
 				paragraph: [ aCanvas label: 'Titulo: '.

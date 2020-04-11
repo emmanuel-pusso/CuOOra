@@ -6,10 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"newTitle",
-		"newText",
-		"newTopics"
+		"questions"
 	],
-	"name" : "CreateQuestionComponent",
+	"name" : "RelevantQuestionComponent",
 	"type" : "normal"
 }
