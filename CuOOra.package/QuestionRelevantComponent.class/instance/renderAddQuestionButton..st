@@ -1,6 +1,6 @@
 rendering
 renderAddQuestionButton: aCanvas
-	aCanvas submitButton
-		callback: [ self addNewQuestionBotton  ];
+	aCanvas button
+		callback: [ self addNewQuestionButton  ];
 		with: 'Hacer una nueva Pregunta'.
 	aCanvas break.

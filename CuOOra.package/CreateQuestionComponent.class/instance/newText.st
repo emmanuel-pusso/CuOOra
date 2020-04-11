@@ -1,0 +1,3 @@
+accessing
+newText
+	^ newText
