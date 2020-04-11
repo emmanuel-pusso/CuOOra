@@ -1,7 +1,5 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas text: 'hola mundo'.
-"
 	aCanvas
 		form: [ aCanvas
 				paragraph: [ aCanvas label: 'Titulo: '.
@@ -19,4 +17,3 @@ renderContentOn: aCanvas
 			aCanvas button
 				callback: [ self cancel ];
 				with: 'Cancelar' ]
-			"
