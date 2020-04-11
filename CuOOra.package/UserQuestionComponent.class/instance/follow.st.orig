@@ -1,9 +1,0 @@
-callbacks
-follow
-self session user follow: user.
-<<<<<<< HEAD
-self session presenter answer.
-=======
-"self session presenter answer."
-self session presenter call: (HomeComponent newComponent: (RelevantQuestionComponent new )).
->>>>>>> origin/2-INVALID-ISSUE
