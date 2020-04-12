@@ -1,4 +1,8 @@
 callbacks
-accept 
-	question addAnswer: (Answer creator: self session user text: newText forQuestion: question).
-	"Ver a donde retorna"
+accept
+	| answer |
+	answer := Answer
+		creator: self session user
+		text: newText
+		forQuestion: question.
+	"PENDIENTE VER DONDE RETORNA"
