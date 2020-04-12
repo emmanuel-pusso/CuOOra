@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "CuOOra-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"question",
+		"newText"
+	],
+	"name" : "CreateAnswerForAQuestionComponent",
+	"type" : "normal"
+}

@@ -1,5 +1,9 @@
 rendering
 renderContentOn: aCanvas
+	aCanvas heading
+		level: 2;
+		with: 'Nueva Pregunta'.
+	aCanvas horizontalRule.
 	aCanvas
 		form: [ aCanvas
 				paragraph: [ aCanvas label: 'Titulo: '.
