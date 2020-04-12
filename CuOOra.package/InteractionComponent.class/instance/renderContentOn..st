@@ -1,4 +1,4 @@
 rendering
 renderContentOn: aCanvas 
 
-self renderQuestionOn: aCanvas.
+self renderQuestionBodyOn: aCanvas.

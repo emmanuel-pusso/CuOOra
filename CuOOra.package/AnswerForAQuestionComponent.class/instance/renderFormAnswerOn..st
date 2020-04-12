@@ -1,6 +1,5 @@
 rendering
-renderContentOn: aCanvas
-	aCanvas horizontalRule.
+renderFormAnswerOn: aCanvas
 	aCanvas
 		form: [ aCanvas
 				paragraph: [ aCanvas label: 'Responder: '.

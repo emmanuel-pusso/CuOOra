@@ -1,6 +1,8 @@
 rendering
 renderQuestions: aQuestion on: aCanvas
-	aCanvas emphasis: aQuestion getTitle.
+	aCanvas anchor callback: [ self clickOnQuestion]; 
+	with: aQuestion getTitle.
+	"VER SI SE PUDE PONER ESTILO DE LETRA EN ESTE ANCHOR (emphasis)"
 	aCanvas break.
 	aCanvas text: 'Topics: '.
 	aQuestion getTopics

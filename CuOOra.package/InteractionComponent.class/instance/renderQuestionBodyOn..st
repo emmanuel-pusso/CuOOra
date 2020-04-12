@@ -1,4 +1,4 @@
 rendering
-renderQuestionOn: aCanvas
+renderQuestionBodyOn: aCanvas
 
 self subclassResponsibility

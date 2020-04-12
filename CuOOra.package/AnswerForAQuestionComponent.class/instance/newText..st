@@ -1,3 +1,3 @@
-accessing
+accesing
 newText: anObject
 	newText := anObject
