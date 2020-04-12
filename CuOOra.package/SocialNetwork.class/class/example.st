@@ -59,8 +59,8 @@ example
 	topicEmma2 := Topic name: 'topicDos' description: 'topicDos'.
 	colTopicsEmma := Set new.
 	colTopicsEmma
-		add: topic1;
-		add: topic2.
+		add: topicEmma1;
+		add: topicEmma2.
 	questionEmma := Question
 		title: 'question uno'
 		creator: emma

@@ -20,5 +20,15 @@ renderQuestions: aQuestion on: aCanvas
 		text: ' likes | ';
 		text: aQuestion amountDisLikes;
 		text: ' dislikes'.
+	aCanvas break.
+	aCanvas anchor
+		callback: [ aQuestion addLike: (Vote registerVotetoAnUser: self session user) ];
+		with: 'Like'.
+	"link Like"
+	aCanvas text: ' | '.
+	"link DisLike"
+	aCanvas anchor
+		callback: [ aQuestion addDisLike: (Vote registerVotetoAnUser: self session user) ];
+		with: 'DisLike'.
 	aCanvas horizontalRule.
 	aCanvas break
