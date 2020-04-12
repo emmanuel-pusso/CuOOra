@@ -14,5 +14,11 @@ renderQuestions: aQuestion on: aCanvas
 	aCanvas anchor
 		callback: [ self proceedWith: aQuestion getUser ];
 		with: aQuestion user username.
+	aCanvas break.
+	aCanvas
+		text: aQuestion amountLikes;
+		text: ' likes | ';
+		text: aQuestion amountDisLikes;
+		text: ' dislikes'.
 	aCanvas horizontalRule.
 	aCanvas break
