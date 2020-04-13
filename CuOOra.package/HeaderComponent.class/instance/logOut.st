@@ -1,4 +1,8 @@
 rendering
 logOut
 
-self session presenter call: LogInComponent new.
+
+
+self session unregister.
+
+self requestContext redirectTo: self application url. 
