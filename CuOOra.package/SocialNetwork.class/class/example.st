@@ -66,7 +66,7 @@ example
 		creator: emma
 		text: 'question uno'
 		topics: colTopicsEmma.
-	emma addTopicOfInterest: topic1.
+	emma addTopicOfInterest: topicEmma1.
 	positiveVotePedro := Vote registerVotetoAnUser: pedro.
 	positiveVoteJuan := Vote registerVotetoAnUser: juan.
 	negativeVoteDiego := Vote registerVotetoAnUser: diego.
