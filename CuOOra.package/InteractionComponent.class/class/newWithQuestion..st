@@ -1,5 +1,5 @@
 initialize
-newWithQuestion: aQuestion
+newWithQuestion: anInteraction 
 	^ self new
-		question: aQuestion;
+		interaction: anInteraction ;
 		yourself

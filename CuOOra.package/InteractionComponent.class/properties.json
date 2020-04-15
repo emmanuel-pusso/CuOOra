@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"question"
+		"interaction"
 	],
 	"name" : "InteractionComponent",
 	"type" : "normal"

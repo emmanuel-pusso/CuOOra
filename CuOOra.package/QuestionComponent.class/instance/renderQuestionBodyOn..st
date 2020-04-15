@@ -1,3 +1,3 @@
 rendering
 renderQuestionBodyOn: aCanvas
- self renderQuestions: question  on: aCanvas 
+ self renderQuestions: interaction on: aCanvas 

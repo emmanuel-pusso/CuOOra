@@ -1,4 +1,4 @@
 rendering
 renderQuestionBodyOn: aCanvas
-	aCanvas break.
-	self renderFormAnswerOn: aCanvas 
+	super renderQuestionBodyOn: aCanvas.
+	self renderFormAnswerOn: aCanvas

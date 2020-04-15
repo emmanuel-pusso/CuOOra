@@ -4,5 +4,5 @@ accept
 	answer := Answer
 		creator: self session user
 		text: newText
-		forQuestion: question.
+		forQuestion: interaction.
 	"PENDIENTE VER DONDE RETORNA"

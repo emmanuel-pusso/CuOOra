@@ -16,21 +16,11 @@ renderQuestions: aQuestion on: aCanvas
 	aCanvas anchor
 		callback: [ self proceedWith: aQuestion getUser ];
 		with: aQuestion user username.
+	aCanvas text: ' | ', (aQuestion getAnswers size asString), ' respuestas' .
+
 	aCanvas break.
-	aCanvas
-		text: aQuestion amountLikes;
-		text: ' likes | ';
-		text: aQuestion amountDisLikes;
-		text: ' dislikes'.
-	aCanvas break.
-	aCanvas anchor
-		callback: [ aQuestion addLike: (Vote registerVotetoAnUser: self session user) ];
-		with: 'Like'.
-	"link Like"
-	aCanvas text: ' | '.
-	"link DisLike"
-	aCanvas anchor
-		callback: [ aQuestion addDisLike: (Vote registerVotetoAnUser: self session user) ];
-		with: 'DisLike'.
+	super renderLikeDislikeInteraction: aQuestion on: aCanvas.
+	"Codigo de like dislike a prueba desde aqui hasta el prox render"
+	
 	aCanvas horizontalRule.
 	aCanvas break
