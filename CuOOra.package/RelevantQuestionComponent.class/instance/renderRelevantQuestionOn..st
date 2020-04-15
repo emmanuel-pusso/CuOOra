@@ -1,3 +1,4 @@
 rendering
 renderRelevantQuestionOn: aCanvas
-	self session user getRelevantQuestionForUser do: [ :each | aCanvas render: (QuestionComponent newWithQuestion: each )]
+	(self topNSortedByCreationDateDesc: 5)
+		do: [ :each | aCanvas render: (QuestionComponent newWithQuestion: each) ]
