@@ -1,3 +1,4 @@
 callbacks
 cancel
-"retorna sin hacer nada, ver a donde retorna"
+	"REVISAR COMO ESTÁ RETORNANDO"
+	self show: (AnswerListComponent newWithQuestion:interaction).

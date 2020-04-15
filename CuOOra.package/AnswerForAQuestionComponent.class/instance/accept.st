@@ -5,4 +5,6 @@ accept
 		creator: self session user
 		text: newText
 		forQuestion: interaction.
-	"PENDIENTE VER DONDE RETORNA"
+	"LA PREGUNTA LA CREA, REVISAR COMO ESTÁ RETORNANDO"
+	self show: (AnswerListComponent newWithQuestion:interaction).
+		

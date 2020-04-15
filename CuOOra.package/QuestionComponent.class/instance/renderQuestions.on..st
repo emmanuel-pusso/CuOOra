@@ -1,5 +1,7 @@
 rendering
 renderQuestions: aQuestion on: aCanvas
+	aCanvas horizontalRule.
+	aCanvas break.
 	aCanvas anchor callback: [ self clickOnQuestion]; 
 	with: aQuestion getTitle.
 	"VER SI SE PUDE PONER ESTILO DE LETRA EN ESTE ANCHOR (emphasis)"
@@ -21,6 +23,3 @@ renderQuestions: aQuestion on: aCanvas
 	aCanvas break.
 	super renderLikeDislikeInteraction: aQuestion on: aCanvas.
 	"Codigo de like dislike a prueba desde aqui hasta el prox render"
-	
-	aCanvas horizontalRule.
-	aCanvas break

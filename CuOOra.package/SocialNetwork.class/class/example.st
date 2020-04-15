@@ -1,6 +1,6 @@
 instance creation
 example
-	| pedro diego juan example questionPedro questionDiego topics topic1 topic2 topic3 textoDePedro textoDeDiego emma questionEmma topicEmma1 topicEmma2 colTopicsEmma positiveVotePedro positiveVoteJuan negativeVoteDiego |
+	| pedro diego juan example questionPedro questionDiego topics topic1 topic2 topic3 textoDePedro textoDeDiego emma questionEmma topicEmma1 topicEmma2 colTopicsEmma positiveVotePedro positiveVoteJuan negativeVoteDiego answerPedro answerJuan |
 	
 	example := self new.
 	topics := Set new.
@@ -72,6 +72,8 @@ example
 	negativeVoteDiego := Vote registerVotetoAnUser: diego.
 	questionEmma addLike: positiveVotePedro; addLike: positiveVoteJuan.
 	questionEmma addDisLike: negativeVoteDiego.
+	answerPedro:= Answer creator: pedro  text: 'respuesta de pedro a la pregunta de emma' forQuestion: questionEmma.
+	answerJuan:= Answer creator: juan  text: 'respuesta de juan a la pregunta de emma'  forQuestion: questionEmma.
 	example addUser: emma.
 	example addTopic: topicEmma1; addTopic: topicEmma2.
 	
