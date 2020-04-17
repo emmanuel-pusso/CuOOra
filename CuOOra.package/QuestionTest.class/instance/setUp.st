@@ -1,4 +1,4 @@
-running
+set-up
 setUp
 |colTopics|
 colTopics:= Set new.

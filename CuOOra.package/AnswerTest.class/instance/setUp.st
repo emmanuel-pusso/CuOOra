@@ -1,4 +1,4 @@
-set up
+set-up
 setUp 
 |colTopics|
 colTopics:= Set new.
@@ -8,5 +8,5 @@ user2:=User username: 'agus.diaz' password: '2wsx3edc'.
 topic1:= Topic name: 'topicUno' description: 'topicUno'.
 colTopics add:topic1.
 
-question2:= Question title: 'question dos' creator: user2 text: 'question 2' topics: colTopics.
-answer:= Answer creator: user1  text: 'question 3' forQuestion: question2.
+question1:= Question title: 'question uno' creator: user2 text: 'question1' topics: colTopics.
+answer1:= Answer creator: user1  text: 'answer1 for question1' forQuestion: question1.

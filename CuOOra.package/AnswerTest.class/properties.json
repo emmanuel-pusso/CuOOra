@@ -6,11 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"question2",
 		"user1",
-		"topic1",
 		"user2",
-		"answer"
+		"topic1",
+		"question1",
+		"answer1"
 	],
 	"name" : "AnswerTest",
 	"type" : "normal"
