@@ -1,8 +1,25 @@
 testing
 testDeleteAnAnswer
-	self assert: user5 answers size equals: 0.
-	self assert: user1 answers size equals: 2.
-	user1 deleteAnAnswer: answer1.
-	self assert: user1 answers size equals: 1.
-	user1 deleteAnAnswer: answer2.
-	self assert: user1 answers size equals: 0
+	| delete |
+	"User2 has 3 answers created"
+	self assert: user2 getAllMyAnswers size equals: 3.
+	
+	"delete answer1 related to question2"
+	user2 deleteAnAnswer: answer1ToQ2.
+	self assert: user2 getAllMyAnswers size equals: 2.
+	delete := user2 getAllMyAnswers
+		detect: [ :each | each = answer1ToQ2 ]
+		ifNone: [ nil ].
+	self assert: delete isNil.
+	
+	"delete answer2 related to question2"
+	user2 deleteAnAnswer: answer2ToQ2.
+	self assert: user2 getAllMyAnswers size equals: 1.
+	delete := user2 getAllMyAnswers
+		detect: [ :each | each = answer2ToQ2 ]
+		ifNone: [ nil ].
+	self assert: delete isNil.
+	
+	"delete answer1 related to question3"
+	user2 deleteAnAnswer: answer1ToQ3.
+	self assert: user2 getAllMyAnswers size equals: 0.
