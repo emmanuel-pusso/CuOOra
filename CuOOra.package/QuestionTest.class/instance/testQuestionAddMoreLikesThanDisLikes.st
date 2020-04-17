@@ -4,4 +4,5 @@ testQuestionAddMoreLikesThanDisLikes
 		addLike: positiveVote;
 		addLike: positiveVoteUser2;
 		addDisLike: negativeVoteUser3.
-	self assert: question getScore equals: 1
+	self assert: question amountLikes equals: 2.
+	self assert: question amountDisLikes equals: 1
