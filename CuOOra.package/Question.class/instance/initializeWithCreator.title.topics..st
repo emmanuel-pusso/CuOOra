@@ -1,6 +1,5 @@
 initialize
-initializeWithCreator: anUser tilte: aTitle text: aText topics: colTopics
-	self initializeAnInteracionFromUser: anUser withAText: aText.
+initializeWithCreator: anUser title: aTitle topics: colTopics
 	title := aTitle.
 	colTopics do: [ :each | each addQuestion: self ].
 	"Es necesario para que cuando un User crea una pregunta, aparezca en el listado de preguntas relevantes"

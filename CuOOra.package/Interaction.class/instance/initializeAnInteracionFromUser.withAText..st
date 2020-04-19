@@ -1,4 +1,4 @@
 initialize
 initializeAnInteracionFromUser: anUser withAText: aText
-user:= anUser.
-text:= aText.
+	user := anUser.
+	text := aText
