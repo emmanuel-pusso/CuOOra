@@ -1,6 +1,6 @@
 instance creation
 example
-	| pedro diego juan example questionPedro questionDiego topics topic1 topic2 topic3 textoDePedro textoDeDiego emma questionEmma topicEmma1 topicEmma2 colTopicsEmma positiveVotePedro positiveVoteJuan negativeVoteDiego answerPedro answerJuan |
+	| pedro diego juan example questionPedro questionDiego topics topic1 topic2 topic3 textoDePedro textoDeDiego  |
 	
 	example := self new.
 	topics := Set new.
@@ -27,12 +27,13 @@ example
 		addUser: juan.
 	pedro addTopicOfInterest: topic1.
 
-	"esto esta agregado para probar"
-	diego addTopicOfInterest: topic2.
 
-	"aca termina"
+
+	"follows"
 	pedro follow: juan.
 	juan follow: diego.
+	
+	
 	topics add: topic1.
 	topics add: topic2.
 	questionPedro := Question
@@ -53,28 +54,6 @@ example
 	 el mensaje no encontro ningun metodo para ejecutar en respuesta'.
 	Answer creator: pedro text: textoDePedro forQuestion: questionDiego.
 
-	"DATOS PRUEBA EMMA"
-	emma := User username: 'emma@cuoora.com' password: 'emma@cuoora.com'.
-	topicEmma1 := Topic name: 'topicUno' description: 'topicUno'.
-	topicEmma2 := Topic name: 'topicDos' description: 'topicDos'.
-	colTopicsEmma := Set new.
-	colTopicsEmma
-		add: topicEmma1;
-		add: topicEmma2.
-	questionEmma := Question
-		title: 'question uno'
-		creator: emma
-		text: 'question uno'
-		topics: colTopicsEmma.
-	emma addTopicOfInterest: topicEmma1.
-	positiveVotePedro := Vote registerVotetoAnUser: pedro.
-	positiveVoteJuan := Vote registerVotetoAnUser: juan.
-	negativeVoteDiego := Vote registerVotetoAnUser: diego.
-	questionEmma addLike: positiveVotePedro; addLike: positiveVoteJuan.
-	questionEmma addDisLike: negativeVoteDiego.
-	answerPedro:= Answer creator: pedro  text: 'respuesta de pedro a la pregunta de emma' forQuestion: questionEmma.
-	answerJuan:= Answer creator: juan  text: 'respuesta de juan a la pregunta de emma'  forQuestion: questionEmma.
-	example addUser: emma.
-	example addTopic: topicEmma1; addTopic: topicEmma2.
+
 	
 	^ example
