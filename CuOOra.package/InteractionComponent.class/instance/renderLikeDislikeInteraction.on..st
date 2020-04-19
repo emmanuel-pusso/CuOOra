@@ -7,12 +7,12 @@ renderLikeDislikeInteraction: anInteraction on: aCanvas
 		text: ' dislikes'.
 	aCanvas break.
 	aCanvas anchor
-		callback: [ anInteraction addLike: (Vote registerVotetoAnUser: self session user) ];
+		callback: [ self likeButtonOn: anInteraction ];
 		with: 'Like'.
 	"link Like"
 	aCanvas text: ' | '.
 	"link DisLike"
 	aCanvas anchor
 		callback:
-				[ anInteraction addDisLike: (Vote registerVotetoAnUser: self session user) ];
+				[ self disLikeButtonOn: anInteraction  ];
 		with: 'DisLike'
