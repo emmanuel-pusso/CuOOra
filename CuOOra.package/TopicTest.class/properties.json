@@ -1,17 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "CuOOra-UI",
+	"category" : "CuOOra-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"question2",
-		"question1",
 		"user1",
 		"topic1",
 		"topic2",
-		"user2"
+		"questionForTopic1"
 	],
 	"name" : "TopicTest",
 	"type" : "normal"
