@@ -6,8 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"like",
-		"dislike",
 		"user1",
 		"user2"
 	],
