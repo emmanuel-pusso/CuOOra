@@ -1,5 +1,7 @@
 public
-addDisLike: aVote
+addDisLike: aUser
+	| aVote |
+	aVote := Vote registerVotetoAnUser: aUser.
 	(likes includes: aVote)
 		ifTrue: [ likes remove: aVote ].
 	(dislikes includes: aVote)

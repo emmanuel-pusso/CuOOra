@@ -10,13 +10,6 @@ topic1:= Topic name: 'topicUno' description: 'topicUno'.
 topic2:= Topic name: 'topicDos' description: 'topicDos'.
 colTopics add: topic1.
 
-positiveVote:=Vote registerVotetoAnUser: user1.
-negativeVote:=Vote registerVotetoAnUser: user1.
-positiveVoteUser2:=Vote registerVotetoAnUser: user2.
-positiveVoteUser3:=Vote registerVotetoAnUser: user3.
-negativeVoteUser2:=Vote registerVotetoAnUser: user2.
-negativeVoteUser3:=Vote registerVotetoAnUser: user3.
-
 question:= Question title: 'question uno' creator: user1 text: 'question uno' topics: colTopics. 
 colTopics add: topic2.
 question2:= Question title: 'question dos' creator: user2 text: 'question 2' topics: colTopics .

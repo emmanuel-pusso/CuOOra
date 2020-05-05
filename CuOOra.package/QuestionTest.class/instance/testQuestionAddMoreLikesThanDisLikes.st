@@ -1,8 +1,8 @@
 testing
 testQuestionAddMoreLikesThanDisLikes
 	question
-		addLike: positiveVote;
-		addLike: positiveVoteUser2;
-		addDisLike: negativeVoteUser3.
+		addLike: user1;
+		addLike: user2;
+		addDisLike: user3.
 	self assert: question amountLikes equals: 2.
 	self assert: question amountDisLikes equals: 1
