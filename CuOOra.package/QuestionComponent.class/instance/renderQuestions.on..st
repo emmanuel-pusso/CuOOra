@@ -21,4 +21,4 @@ renderQuestions: aQuestion on: aCanvas
 	aCanvas
 		text: ' | ' , aQuestion getAnswers size asString , ' respuestas'.
 	aCanvas break.
-	super renderLikeDislikeInteraction: aQuestion on: aCanvas
+	self renderLikeDislikeInteraction: aQuestion on: aCanvas
