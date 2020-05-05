@@ -1,6 +1,6 @@
 testing
 testConstructor
-	| newQuestion colTopics findTopic |
+	| newQuestion colTopics |
 	
 	"Creo la pregunta"
 	colTopics := Set new.
@@ -13,18 +13,10 @@ testConstructor
 		text: 'new question text'
 		topics: colTopics.
 		
-	self assert: newQuestion user = user1.
+	self assert: newQuestion user equals: user1.
 	self assert: newQuestion user username equals: 'emma.pusso'.
 	self assert: newQuestion getTitle equals: 'new question title'.
 	self assert: newQuestion getText equals: 'new question text'.
-
-	self assert: newQuestion getTopics size = 2.
-	findTopic := newQuestion getTopics
-		detect: [ :each | each = topic1 ]
-		ifNone: [ nil ].
-	self assert: findTopic isNotNil.
-	
-	findTopic := newQuestion getTopics
-		detect: [ :each | each = topic2 ]
-		ifNone: [ nil ].
-	self assert: findTopic isNotNil
+	self assert: newQuestion getTopics size equals: 2.
+	self assert: ((newQuestion getTopics) includes: topic1).
+	self assert: ((newQuestion getTopics) includes: topic2 ).

@@ -8,19 +8,19 @@
 	"instvars" : [
 		"question",
 		"question2",
+		"question3",
+		"answer3",
 		"user1",
+		"user2",
+		"user3",
 		"topic1",
 		"topic2",
 		"positiveVote",
 		"negativeVote",
-		"user2",
-		"user3",
 		"positiveVoteUser2",
 		"positiveVoteUser3",
 		"negativeVoteUser2",
-		"negativeVoteUser3",
-		"question3",
-		"answer3"
+		"negativeVoteUser3"
 	],
 	"name" : "QuestionTest",
 	"type" : "normal"
