@@ -15,5 +15,5 @@ testAddAQuestion
 		text: 'alguien me explica como se hacen'
 		topics: colTopics.
 	self assert: user1 getAllMyQuestions size equals: 1.
-	self assert: user1 getAllMyQuestions first = newQuestion
+	self assert: user1 getAllMyQuestions first equals: newQuestion
 	

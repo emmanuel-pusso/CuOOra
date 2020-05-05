@@ -10,4 +10,4 @@ testAddAnAnswer
 		text: 'answer1'
 		forQuestion: question2.
 	self assert: user3 getAllMyAnswers size equals: 1.
-	self assert: user3 getAllMyAnswers first = newAnswer
+	self assert: user3 getAllMyAnswers first equals: newAnswer
