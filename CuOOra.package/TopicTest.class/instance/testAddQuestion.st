@@ -1,6 +1,6 @@
 testing
 testAddQuestion
-	| newQuestion colTopics findQuestion |
+	| newQuestion colTopics |
 	"topic2 no tiene ninguna pregunta"
 	self assert: topic2 getAllMyQuestions isEmpty.
 
@@ -14,19 +14,9 @@ testAddQuestion
 		topics: colTopics.
 
 	"verifico que el tópico agrego la pregunta"
-	self assert: topic2 getAllMyQuestions size equals: 1.
-	findQuestion := topic2 getAllMyQuestions
-		detect: [ :each | each = newQuestion ]
-		ifNone: [ nil ].
-	self assert: findQuestion isNotNil.
+	self assert: (topic2 getAllMyQuestions includes: newQuestion).
 
-	"topic1 tiene una pregunta"
-	self assert: topic1 getAllMyQuestions size equals: 1.
-	"agrego una nueva pregunta"
+	"agrego una nueva pregunta a topic1"
 	topic1 addQuestion: newQuestion.
 	"verifico que el tópico agrego la pregunta"
-	self assert: topic1 getAllMyQuestions size equals: 2.
-	findQuestion := topic1 getAllMyQuestions
-		detect: [ :each | each = newQuestion ]
-		ifNone: [ nil ].
-	self assert: findQuestion isNotNil
+	self assert: (topic1 getAllMyQuestions includes: newQuestion)
