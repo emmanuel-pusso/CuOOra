@@ -5,4 +5,5 @@ deleteMySelf
 	 - borrar la respuesta de la pregunta"
 
 	user deleteAnAnswer: self.
-	question getAnswers remove: self
+	"question getAnswers remove: self"
+	question removeAnswer: self
