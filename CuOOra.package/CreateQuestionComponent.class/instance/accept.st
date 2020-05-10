@@ -8,6 +8,6 @@ accept
 		creator: self session user
 		text: newText
 		topics: colTopics.
-	self session socialNetwork addManyTopics: colTopics.
+	self model addManyTopics: colTopics.
 	self session presenter
 		call: (HomeComponent newComponent: RelevantQuestionComponent new)
