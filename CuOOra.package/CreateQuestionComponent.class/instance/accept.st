@@ -1,15 +1,13 @@
 callbacks
 accept
 	| colTopics question |
-	"procesar String de topicos separados por coma"
-	colTopics := Set new.
-	(newTopics substrings: ',')
-		do: [ :each | colTopics add: (Topic name: each description: each) ].
+	colTopics := self createColTopicsFromString: newTopics.
 	self newTopics: colTopics.
 	question := Question
 		title: newTitle
 		creator: self session user
 		text: newText
 		topics: colTopics.
+	self session socialNetwork addManyTopics: colTopics.
 	self session presenter
 		call: (HomeComponent newComponent: RelevantQuestionComponent new)

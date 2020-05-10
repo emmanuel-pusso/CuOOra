@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"user"
+		"user",
+		"socialNetwork"
 	],
 	"name" : "SessionWithUser",
 	"type" : "normal"
