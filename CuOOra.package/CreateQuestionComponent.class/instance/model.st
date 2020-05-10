@@ -1,0 +1,3 @@
+private
+model
+	^ SocialNetwork initializeSampleInstance

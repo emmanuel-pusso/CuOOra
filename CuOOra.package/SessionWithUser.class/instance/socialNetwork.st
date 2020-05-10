@@ -1,3 +1,0 @@
-accesing
-socialNetwork
-	^ socialNetwork

@@ -5,7 +5,5 @@ createColTopicsFromString: aString
 	| colTopics |
 	colTopics := Set new.
 	(aString substrings: ',')
-		do:
-			[ :each | colTopics add: (self session socialNetwork getTopicByName: each) ].
-		
+		do: [ :each | colTopics add: (self model getTopicByName: each) ].
 	^ colTopics
